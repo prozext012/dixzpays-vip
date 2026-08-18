@@ -1,0 +1,48 @@
+<!-- ===== HALAMAN DETAIL PRODUK ===== -->
+<div class="page-product" id="pageProduct">
+
+    <!-- Slider + tombol back jadi satu kontainer -->
+    <div class="slider-wrapper">
+        <div class="btn-back" id="btnBackProduct">‹</div>
+        <div class="btn-notif-product" id="btnNotifProduct" onclick="openNotifPage()">
+            <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+            <span class="notif-count-badge" id="notifCountProduct"></span>
+            <div class="notif-overlay-preview" id="notifOverlayPreviewProduct" onclick="event.stopPropagation(); openNotifPage();">
+                <div class="notif-overlay-latest"></div>
+                <div class="notif-overlay-text"></div>
+            </div>
+        </div>
+        <div class="detail-main-slider" id="detailSlider">
+            <div class="detail-slide-track" id="slideTrack"></div>
+            <div class="slider-indicators" id="sliderIndicators"></div>
+        </div>
+    </div>
+
+    <div class="product-detail-content">
+        <div class="detail-title" id="detailTitle">Nama Produk</div>
+        <div class="detail-price-wrap" id="detailPriceWrap">
+            <span class="detail-price-old" id="detailPriceOld" style="display:none"></span>
+            <span class="detail-price" id="detailPrice">Rp 0</span>
+        </div>
+        <div class="detail-desc" id="detailDesc"></div>
+
+        <!-- Gallery horizontal scroll -->
+        <div class="gallery-scroll" id="galleryScroll"></div>
+
+        <!-- Testimoni -->
+        <div class="testimoni-section" id="testimoniSection" style="display:none">
+            <div class="testimoni-header">
+                <span class="testimoni-title" id="testimoniTitle">Testimoni Pelanggan</span>
+                <span class="testimoni-limit" id="testimoniLimit">hanya menampilkan 10</span>
+            </div>
+            <div class="testimoni-list" id="testimoniList"></div>
+        </div>
+    </div>
+
+    <!-- Tombol BELI (mengambang) - MERAH SOFT -->
+    <div class="btn-beli-fixed">
+        <button id="btnBeliSekarang">
+            BELI SEKARANG <span id="btnBeliPrice">Rp 0</span>
+        </button>
+    </div>
+</div>

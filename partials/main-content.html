@@ -1,1 +1,55 @@
+<div class="container" id="mainContainer">
 
+    <!-- ===== PROFILE CARD ===== -->
+    <header class="profile-card">
+        <img src="https://i.ibb.co.com/0jKfN0b5/AIRetouch-20260711-091601391.png" alt="Cover" class="cover-photo" id="profileCoverImg" />
+        <div class="profile-content">
+            <div class="avatar-column">
+                <div class="avatar-wrapper">
+                    <div class="avatar-ring" id="avatarRing" onclick="openStatusViewer()">
+                        <div class="avatar-container">
+                            <img src="https://i.ibb.co.com/0p557jrm/AIRetouch-20260711-091531075.png" alt="Avatar" class="avatar-img" id="profileAvatarImg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="username-wrapper">
+                    <h1 id="profileNameText">Andika</h1>
+                </div>
+            </div>
+            <div class="status-notif-row">
+                <div class="online-badge">
+                    <span>Online</span>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="notif-icon-btn" id="btnNotifMain" onclick="openNotifPage()">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                    <span class="notif-count-badge" id="notifCountMain"></span>
+                    <div class="notif-overlay-preview" id="notifOverlayPreview" onclick="event.stopPropagation(); openNotifPage();">
+                        <div class="notif-overlay-latest"></div>
+                        <div class="notif-overlay-text"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="bio" id="profileBioText">nama saya Andika, saya mecoba untuk mengumpulkan uang dari internet, jangan lupa dukung aku 🙏</p>
+        </div>
+    </header>
+
+    <!-- ===== NOTIFIKASI V1 (TEKS BERJALAN) ===== -->
+    <div class="notif-ticker" id="notifTickerV1" style="display:none;">
+        <span class="notif-ticker-icon">
+            <span class="material-symbols-outlined">campaign</span>
+        </span>
+        <div class="notif-ticker-track">
+            <div class="notif-ticker-inner" id="notifTickerInner"></div>
+        </div>
+    </div>
+
+    <!-- ===== GRID PRODUK 2 KOLOM ===== -->
+    <div class="product-grid" id="productGrid"></div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        mau bikin website kaya gini ? langsung hub<br />
+        <a href="https://wa.me/qr/74JALTPNIT3DH1" target="_blank">admin sekarang</a>
+    </footer>
+</div>

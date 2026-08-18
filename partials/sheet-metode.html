@@ -1,0 +1,56 @@
+<!-- ============================================================ -->
+<!-- ===== BOTTOM SHEET: PILIH METODE PEMBAYARAN ===== -->
+<div class="sheet-overlay" id="sheetOverlay"></div>
+<div class="payment-method-sheet" id="paymentMethodSheet">
+    <div class="sheet-handle"></div>
+
+    <div id="sheetMethodView">
+        <div class="sheet-title">Pilih Metode Pembayaran</div>
+
+        <div class="method-list">
+            <div class="method-option disabled">
+                <div class="method-icon-circle">
+                    <img src="https://i.ibb.co.com/RxcXkbR/19505ccf6392c16c5c320a50e8c2b745.jpg" alt="DANA" />
+                </div>
+                <span class="method-name">DANA</span>
+                <span class="method-status">Segera Hadir</span>
+            </div>
+
+            <div class="method-option disabled">
+                <div class="method-icon-circle">
+                    <img src="https://i.ibb.co.com/FL1rmD7w/ca3bcfb0b9e22aface4fb684a733075e.jpg" alt="GoPay" />
+                </div>
+                <span class="method-name">GoPay</span>
+                <span class="method-status">Segera Hadir</span>
+            </div>
+
+            <div class="method-option disabled">
+                <div class="method-icon-circle">
+                    <img src="https://i.ibb.co.com/fdcCYJgd/b1a071a263b1ceb1ceadd4798d56f531.jpg" alt="OVO" />
+                </div>
+                <span class="method-name">OVO</span>
+                <span class="method-status">Segera Hadir</span>
+            </div>
+
+            <div class="method-option" data-method="qris">
+                <div class="method-icon-circle">
+                    <img src="https://i.ibb.co.com/F4hYS9hG/sedang-1707756021-logo-qris.jpg" alt="QRIS" />
+                </div>
+                <span class="method-name">QRIS</span>
+                <span class="method-check" id="methodCheck">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>
+                </span>
+            </div>
+        </div>
+
+        <button class="btn-lanjutkan" id="btnLanjutkanPayment" disabled>Lanjutkan</button>
+    </div>
+
+    <div class="sheet-loading-view" id="sheetLoadingView">
+        <div class="loading-ring"></div>
+        <p class="loading-label" id="sheetLoadingLabel">Menyiapkan QRIS Pembayaran...</p>
+        <div class="loading-progress-track">
+            <div class="loading-progress-fill" id="sheetProgressFill"></div>
+        </div>
+    </div>
+</div>

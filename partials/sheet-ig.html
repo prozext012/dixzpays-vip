@@ -1,0 +1,42 @@
+<!-- ============================================================ -->
+<!-- ===== SHEET: INPUT DATA INSTAGRAM ===== -->
+<div class="sheet-overlay" id="igSheetOverlay"></div>
+<div class="payment-method-sheet" id="igInputSheet">
+    <div class="sheet-handle"></div>
+
+    <div id="igInputView" class="ig-input-view">
+        <div class="sheet-title" id="igSheetTitle">Detail Pesanan Instagram</div>
+
+        <label class="ig-field-label" id="igUsernameLabel">Username Instagram</label>
+        <input type="text" id="igUsernameInput" class="ig-username-input" placeholder="@username_kamu" autocomplete="off" autocorrect="off" spellcheck="false" />
+
+        <label class="ig-field-label">Pilih Jumlah Followers</label>
+        <div class="ig-followers-grid" id="igFollowersGrid">
+            <button class="ig-followers-btn" data-amount="100">100</button>
+            <button class="ig-followers-btn" data-amount="200">200</button>
+            <button class="ig-followers-btn" data-amount="300">300</button>
+            <button class="ig-followers-btn" data-amount="400">400</button>
+            <button class="ig-followers-btn" data-amount="500">500</button>
+            <button class="ig-followers-btn" data-amount="600">600</button>
+            <button class="ig-followers-btn" data-amount="700">700</button>
+            <button class="ig-followers-btn" data-amount="800">800</button>
+            <button class="ig-followers-btn" data-amount="900">900</button>
+            <button class="ig-followers-btn" data-amount="1000">1.000</button>
+        </div>
+
+        <div class="ig-price-display">
+            <span class="ig-price-label">Total Pembayaran</span>
+            <span class="ig-price-value" id="igPriceDisplay">Pilih jumlah dulu</span>
+        </div>
+
+        <button class="btn-lanjutkan" id="btnLanjutkanIG" disabled>Lanjutkan Pembayaran</button>
+    </div>
+
+    <div class="sheet-loading-view" id="igLoadingView">
+        <div class="loading-ring"></div>
+        <p class="loading-label">Menyiapkan Metode Pembayaran...</p>
+        <div class="loading-progress-track">
+            <div class="loading-progress-fill" id="igProgressFill"></div>
+        </div>
+    </div>
+</div>
