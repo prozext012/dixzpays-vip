@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Vercel
+.vercel
+
+# Logs
+*.log
+
+# Env (kalau nanti ada credential yang dipindah ke env var)
+.env
+.env.local
