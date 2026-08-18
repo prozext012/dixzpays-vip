@@ -1,1 +1,0 @@
-# dixzpays-vip
