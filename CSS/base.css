@@ -1,1 +1,126 @@
+/* Dipecah dari style.css asli */
+
+/* ================================================================ */
+        /* ===== HALAMAN NOTIFIKASI ===== */
+        .page-notif {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--bg-base);
+            z-index: 2500;
+            overflow-y: auto;
+            padding: 0 20px 40px;
+        }
+        .page-notif.active { display: block; }
+        .notif-top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: rgba(20,80,163, 0.35);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin: 0 -20px 28px;
+            padding: max(16px, env(safe-area-inset-top)) 20px 16px;
+            border-bottom: 2px solid rgba(15,23,42,0.15);
+        }
+        .notif-page-title {
+            font-size: 1.3rem; font-weight: 800; color: var(--dark);
+            margin: 0;
+            line-height: 1.3rem;
+        }
+        .btn-close-notif {
+            flex-shrink: 0;
+            width: 1.3rem;
+            height: 1.3rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: transparent;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            line-height: 1;
+            color: var(--dark);
+            cursor: pointer;
+        }
+        .notif-page-card {
+            background: var(--light); border: 1px solid var(--border); border-radius: 16px;
+            margin-bottom: 16px; overflow: hidden; box-shadow: 0 5px 15px rgba(15,23,42,0.18);
+        }
+        .notif-page-card img { width: 100%; height: auto; display: block; }
+        .notif-page-body { padding: 14px 16px; }
+        .notif-page-desc { font-size: 0.9rem; color: var(--dark); line-height: 1.5; white-space: pre-wrap; }
+        .notif-page-time { margin-top: 8px; font-size: 0.72rem; font-weight: 600; color: #999; }
+        .empty-state { text-align: center; color: #999; font-size: 0.85rem; margin-top: 60px; }
+
+        /* ===== RESET ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+        a, button {
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+            user-select: none;
+            text-decoration: none;
+        }
+
+        :root {
+            --bg-base: #f4f6fb;
+            --light: #ffffff;
+            --dark: #16233f;
+            --primary: #1450a3;
+            --accent: #2f6fe0;
+            --green: #10b981;
+            --soft-green: #4f9d7c;
+            --soft-red: #d9645c;
+            --shadow-offset: 5px;
+            --border: #e2e8f0;
+            --primary-light: #e8f0fe;
+            --text-muted: #64748b;
+            --shadow-sm: 0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04);
+            --shadow-md: 0 4px 10px rgba(15,23,42,0.08), 0 2px 4px rgba(15,23,42,0.06);
+            --shadow-lg: 0 10px 24px rgba(15,23,42,0.12), 0 4px 8px rgba(15,23,42,0.06);
+        }
+
+        body {
+            background-color: var(--bg-base);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            padding: 20px 20px 100px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            max-width: 600px;
+            max-height: 600px;
+            background: radial-gradient(ellipse at center, #dbe6f7 0%, #eef3fb 50%, transparent 100%);
+            filter: blur(110px);
+            z-index: -1;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
